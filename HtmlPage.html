@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>To Do List</title>
+    <script src="Scripts/jquery-2.1.1.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/jquery-2.1.1.min.js"></script>
+    <link href="Content/bootstrap-theme.css" rel="stylesheet" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+
+    <link href="main.css" rel="stylesheet" />
+    <script src="eventArray2.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="panel">
+            <h1 align="center" class="h1">To Do List</h1>
+        </div>
+        <div class="row" align="center">
+            <div class="col-md-3">
+                <input id="eventInput" class="form-control" placeholder="Enter Event" />
+            </div>
+            <div class="col-md-3">
+                <button onclick="addEvent()" class="btn btn-default">Enter</button>
+                <button onclick="clearDone()" class="btn btn-default">Clear Done</button>
+            </div>
+        </div>
+        <div class="panel panel-body">
+             <div id="eventDisplay"></div>
+        </div>
+
+    </div>
+</body>
+</html>
